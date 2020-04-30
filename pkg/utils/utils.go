@@ -7,7 +7,7 @@ import (
 	"sort"	
 	"strings"
 
-	"github.com/albadaco/find-my-feed-go/pkg/types"
+	"github.com/albadraco/find-my-feed-go/pkg/types"
 )
 
 // SeasonOneExpression is this a season 1 episode.

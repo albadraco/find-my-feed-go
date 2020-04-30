@@ -7,7 +7,7 @@ import (
 
 	//"github.com/mmcdole/gofeed"
 	
-	"github.com/albadaco/find-my-feed-go/pkg/types"
+	"github.com/albadraco/find-my-feed-go/pkg/types"
 	//"../../pkg/utils"
 )
 
