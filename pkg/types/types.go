@@ -2,7 +2,6 @@ package types
 
 import (
 	"github.com/albadraco/find-my-feed-go/pkg/parser"
-	"github.com/albadraco/find-my-feed-go/pkg/cfg"
 )
 
 // Myfeedconfig a struct
