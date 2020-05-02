@@ -1,7 +1,8 @@
 package types
 
 import (
-	"github.com/mmcdole/gofeed"
+	"github.com/albadraco/find-my-feed-go/pkg/parser"
+	"github.com/albadraco/find-my-feed-go/pkg/cfg"
 )
 
 // Myfeedconfig a struct
@@ -9,7 +10,7 @@ type Myfeedconfig struct {
 	Debug            bool          `json:"debug,omitempty"`
 	Feeds            []Myfeedinfo  `json:"feeds,omitempty"`
 	DestinationPaths []string      `json:"destinations,omitempty"`
-	Header           gofeed.Header `json:"header,omitempty"`
+	Header           parser.Header `json:"header,omitempty"`
 }
 
 // MyInterests a struct
@@ -17,13 +18,14 @@ type MyInterests struct {
 	URL  string `json:"url,omitempty"`
 	Name string `json:"name,omitempty"`
 	Path string `json:"path,omitempty"`
+	Size int64  `json:"size,omitempty"`
 }
 
 // Myshow a struct
 type Myshow struct {
 	Name string
 	Last string
-	Size int
+	Size int64
 }
 
 // Myfeedinfo a struct

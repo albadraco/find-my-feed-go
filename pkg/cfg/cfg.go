@@ -8,7 +8,7 @@ import (
 	//"github.com/mmcdole/gofeed"
 	
 	"github.com/albadraco/find-my-feed-go/pkg/types"
-	//"../../pkg/utils"
+
 )
 
 // Load  create configuration

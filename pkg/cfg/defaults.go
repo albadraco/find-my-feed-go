@@ -1,14 +1,8 @@
 package cfg
 
 import (
-	//"encoding/json"
-	//"fmt"
-	//"os"
-
-	"github.com/mmcdole/gofeed"
-	
+	"github.com/albadraco/find-my-feed-go/pkg/cfg"
 	"github.com/albadraco/find-my-feed-go/pkg/types"
-	//"../../pkg/utils"
 )
 
 // Defaultfeeds  a set of working defaults from windows.
@@ -37,7 +31,7 @@ var defaultfeeds = types.Myfeedconfig {
 		//"/mnt/raid6/Media/upstairs/tvshows",
 		//"/mnt/raid6/Media/TVShows",
 	},
-	Header: gofeed.Header{
+	Header: parser.Header{
 		Name: "If-None-Match",
 		Value: "None",
 	},
