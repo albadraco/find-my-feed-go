@@ -1,15 +1,17 @@
 package types
 
-import (
-	"github.com/albadraco/find-my-feed-go/pkg/parser"
-)
+// Header headers to insert into call
+type Header struct {
+	Name  string
+	Value string
+}
 
 // Myfeedconfig a struct
 type Myfeedconfig struct {
 	Debug            bool          `json:"debug,omitempty"`
 	Feeds            []Myfeedinfo  `json:"feeds,omitempty"`
 	DestinationPaths []string      `json:"destinations,omitempty"`
-	Header           parser.Header `json:"header,omitempty"`
+	Header           Header `json:"header,omitempty"`
 }
 
 // MyInterests a struct

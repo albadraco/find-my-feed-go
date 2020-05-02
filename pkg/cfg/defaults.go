@@ -1,7 +1,6 @@
 package cfg
 
 import (
-	"github.com/albadraco/find-my-feed-go/pkg/cfg"
 	"github.com/albadraco/find-my-feed-go/pkg/types"
 )
 
@@ -31,7 +30,7 @@ var defaultfeeds = types.Myfeedconfig {
 		//"/mnt/raid6/Media/upstairs/tvshows",
 		//"/mnt/raid6/Media/TVShows",
 	},
-	Header: parser.Header{
+	Header: Header{
 		Name: "If-None-Match",
 		Value: "None",
 	},
